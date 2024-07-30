@@ -1,0 +1,109 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1_insert_operation_addition
+      author: ezequiel.coronel
+
+      changes:
+        - insert:
+            tableName: operations
+            columns:
+              - column:
+                  name: id
+                  valueComputed: 'UUID()'
+              - column:
+                  name: cost
+                  value: '1'
+              - column:
+                  name: type
+                  value: 'ADDITION'
+
+  - changeSet:
+      id: 2_insert_operation_substraction
+      author: ezequiel.coronel
+
+      changes:
+        - insert:
+            tableName: operations
+            columns:
+              - column:
+                  name: id
+                  valueComputed: 'UUID()'
+              - column:
+                  name: cost
+                  value: '1'
+              - column:
+                  name: type
+                  value: 'SUBTRACTION'
+
+  - changeSet:
+      id: 3_insert_operation_multiplication
+      author: ezequiel.coronel
+
+      changes:
+        - insert:
+            tableName: operations
+            columns:
+              - column:
+                  name: id
+                  valueComputed: 'UUID()'
+              - column:
+                  name: cost
+                  value: '2'
+              - column:
+                  name: type
+                  value: 'MULTIPLICATION'
+
+  - changeSet:
+      id: 4_insert_operation_division
+      author: ezequiel.coronel
+
+      changes:
+        - insert:
+            tableName: operations
+            columns:
+              - column:
+                  name: id
+                  valueComputed: 'UUID()'
+              - column:
+                  name: cost
+                  value: '2'
+              - column:
+                  name: type
+                  value: 'DIVISION'
+
+  - changeSet:
+      id: 5_insert_operation_square_root
+      author: ezequiel.coronel
+
+      changes:
+        - insert:
+            tableName: operations
+            columns:
+              - column:
+                  name: id
+                  valueComputed: 'UUID()'
+              - column:
+                  name: cost
+                  value: '3'
+              - column:
+                  name: type
+                  value: 'SQUARE_ROOT'
+
+  - changeSet:
+      id: 6_insert_operation_random_string
+      author: ezequiel.coronel
+
+      changes:
+        - insert:
+            tableName: operations
+            columns:
+              - column:
+                  name: id
+                  valueComputed: 'UUID()'
+              - column:
+                  name: cost
+                  value: '4'
+              - column:
+                  name: type
+                  value: 'RANDOM_STRING'
+
